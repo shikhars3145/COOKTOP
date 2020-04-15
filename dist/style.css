@@ -550,3 +550,13 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.back {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(to bottom right, rgb(45, 171, 255),#000);
+    z-index: -1;
+}

@@ -1,4 +1,4 @@
-import {elements} from './base';
+import {elements, imageHTTPS} from './base';
 import Fraction from 'fraction.js';
 
 const formatQuant = quant => {
@@ -27,7 +27,7 @@ export const displayRecipe = (recipe,isliked=false) => {
     
     const html = `
     <div class="recipePhoto">
-                <img src="${recipe.image}" alt="" srcset="">
+                <img src="${imageHTTPS(recipe.image_url)}" alt="" srcset="">
                 <h1><span>${recipe.title}</span></h1>
             </div>
             <div class="recipeDetails">

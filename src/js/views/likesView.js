@@ -1,4 +1,4 @@
-import { elements } from "./base";
+import { elements, imageHTTPS } from "./base";
 import { clipTitles } from "./searchView";
 
 
@@ -6,7 +6,7 @@ export const addLikeUi = item => {
     const html = `
     <a class = 'card-link' href="#${item.id}">
     <div class="card" data-itemid="${item.id}">
-        <img src="${item.image}" alt="" srcset="">
+        <img src="${imageHTTPS(item.image_url)}" alt="" srcset="">
         <div class="cardTitle">${clipTitles(item.title)}</div>
         <div class="cardSubtitle">${item.publisher}</div>
     </div>

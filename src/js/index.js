@@ -107,8 +107,11 @@ const plusMinusClick = (event)=>{
         if(state.recipe.servings>1)
             state.recipe.updateServings(false);
     }
-    recipeView.updateIng(state.recipe);
-    recipeView.updateServings(state.recipe);
+    if(state.recipe) {
+        recipeView.updateIng(state.recipe);
+        recipeView.updateServings(state.recipe);
+    }
+    
     
 }
 

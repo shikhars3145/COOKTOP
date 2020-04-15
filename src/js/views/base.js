@@ -20,3 +20,8 @@ export const displayLoader = parent => {
 export const clearLoader = parent => {
     parent.innerHTML = '';
 }
+
+export const imageHTTPS = imageURL => {
+    const newURL = "https"+imageURL.slice(4);
+    return newURL;
+}

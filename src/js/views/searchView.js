@@ -1,4 +1,4 @@
-import {elements} from './base'
+import {elements, imageHTTPS} from './base'
 
 export const highlightSelected = (id) => {
     if(id){
@@ -43,7 +43,7 @@ const displayRecipeCard = (recipe) => {
     const markup = `
     <a class = 'card-link' href="#${recipe.recipe_id}">
         <div class="card">
-            <img src="${recipe.image_url}" alt="${clipTitles(recipe.title)}" srcset="">
+            <img src="${imageHTTPS(recipe.image_url)}" alt="${clipTitles(recipe.title)}" srcset="">
             <div class="cardTitle">${clipTitles(recipe.title)}</div>
             <div class="cardSubtitle">${recipe.publisher}</div>
         </div>

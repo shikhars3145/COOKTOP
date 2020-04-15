@@ -27,7 +27,7 @@ export const displayRecipe = (recipe,isliked=false) => {
     
     const html = `
     <div class="recipePhoto">
-                <img src="${imageHTTPS(recipe.image_url)}" alt="" srcset="">
+                <img src="${imageHTTPS(recipe.image)}" alt="" srcset="">
                 <h1><span>${recipe.title}</span></h1>
             </div>
             <div class="recipeDetails">

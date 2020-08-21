@@ -1,5 +1,5 @@
 # COOKTOP
-A webapp to search for recipes, made using vanilla javascript.
+A webapp to search for recipes, made using vanilla javascript. [check it out here](https://shikhars3145.github.io/COOKTOP/) Look below for supported search queries.
 
 Users can create a shopping list to buy ingredients for searched recipes.
 
